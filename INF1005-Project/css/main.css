@@ -1,0 +1,92 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10 Jan 2023, 5:15:21 pm
+    Author     : stong
+*/
+
+
+#home
+{
+    color:white;
+}
+
+#dogs h2
+{
+    text-decoration: underline;
+}
+#cats h2
+{
+    text-decoration: underline;
+}
+
+figure
+{
+    display: inline-block
+}
+figcaption
+{
+    color:grey;
+    font-style: italic;
+    text-align:center
+}
+
+footer
+{
+
+    padding:10px;
+    border-style:inset;
+    border-left: 0px;
+    border-right:0px;
+    border-bottom:0px;
+    
+}
+
+footer p
+{
+    text-align:center;
+    font-style:italic;
+    font-size:smaller;
+}
+
+.img-thumbnail
+{
+    z-index:0;
+}
+#popup_box
+{
+    position: absolute;
+    border-style: double;
+    border-color: gray;
+    background-color: gray;
+    top: 90px;
+    left:105px;
+    z-index:2;
+    width: 420px;
+    height: 520px;
+}
+#popup_img
+{
+    width:400px;
+    height:500px;
+    z-index:3;
+    position:absolute;
+    left:7.5px;
+    top:5px;
+}
+
+#signup
+{
+    width:75px;
+    height:75px;
+}
+
+
+#homes
+{
+    width:100px;
+    height:100px;
+}
+
