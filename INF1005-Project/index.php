@@ -5,103 +5,75 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html lang = "en">
     <head>
-        <!--jQuery script-->
-        <script defer
-                src ="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-                crossorigin = "anonymous">
-        </script>
-        <script defer
-            src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity = "sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-            crossorigin="anonymous">
-        </script>
-        <script defer src="js/main.js">
-        </script>
-        <title>World of Pets</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet"
-              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-              integrity ="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="css/main.css" type="text/css">
+    <?php
+    include "header.php"
+    ?>
     </head>
     <body>
         <?php 
             include "nav.inc.php";
         ?>
-        <div>
-        <header class = "jumbotron text-center bg-dark">
-            <section id ="home">
-            <h1 class = "display-4">Welcome to the World of Pets!</h1>
-            <h2>Home of Singapore's Pet Lovers</h2>
-            </section>
-        </header>
-        </div>
+        
+        <?php
+            include "searchbar.php";
+        ?>
+
         <main class = "container">
-            <div id ="pets">
-            <section id = "dogs">
-                        <h2 id="dog_title">All about Dogs!</h2>
-                        <div class="row">
-                        <article class = "col-sm">
-                            <h3>Poodles</h3>
-                            <figure>
-                                <img class="img-thumbnail" src="images/poodle_small.jpg" alt ="Poodle" id="poodle">
-                                <figcaption>Standard Poodle</figcaption>
-                            </figure>
-                            <p>
-                                Poodles are a group of formal dog breeds, the Standard Poodle, 
-                                Miniature Poodle and the Toy Poodle...
-                            </p>
-                        </article>
-                        <article class = "col-sm">
-                            <h3>Chihuahua</h3>
-                            <figure>
-                                    <img class = "img-thumbnail" src="images/chihuahua_small.jpg" alt="Chihuahua" 
-                                    id="chihuahua"    title ="View larger image....">
-                                <figcaption>Chihuahua</figcaption>
-                            </figure>
-                            <p>
-                                The Chihuahua is the smallest breed of dog and is named 
-                                after the Mexican state of Chihuahua
-                            </p>
-                        </article>
-                        </div>
-            </section>
-            <section id ="cats">
-                <h2 id = "cat_title">All About Cats!</h2>
-                <div class="row">
-                <article class="col-sm"> 
-                <h3>Tabby</h3>
-                <figure>
-                        <img class = "img-thumbnail" src="images/tabby_small.jpg" alt ="Tabby"
-                             id="tabby">
-                    <figcaption>Tabby Cat</figcaption>
-                </figure>
-              
-                <p>
-                   A tabby is any domestic cat with a distinctive 
-                   'M'-shaped marking on its forehead; stripes by its eyes and across its cheeks, 
-                   along its back, and around its legs and tail or swirled patterns on the body.
-                </p>
-                </article>
-                <article class = "col-sm"> 
-                <h3>Calico</h3>
-                <figure>
-                        <img  class = "img-thumbnail" src="images/calico_small.jpg" alt="Calico"
-                             id="calico" >
-                    <figcaption>Calico Cat</figcaption>
-                </figure>
-                <p>
-                    A calico cat is a domestic cat of any breed with a tri-color coat. 
-                    The calico cat is most commonly thought of as being 25% to 75% white with large orange and black patches
-                    Calicoes are almost exclusively female except under rare genetic conditions.
-                </p>
-                </article>
-                </div>
-            </section>
-                </div>
+<div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleCaptions"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleCaptions"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleCaptions"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Chinese Cuisine.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
             </main>
     <?php 
         include "footer.inc.php";
