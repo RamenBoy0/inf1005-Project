@@ -9,6 +9,11 @@
 <!--Library used to generate the icons and fonts-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+crossorigin="anonymous">
 
 <!--jQuery-->
 <script defer
@@ -27,7 +32,11 @@ crossorigin="anonymous">
 </script>
 
 <script defer src="js/home.js"></script>
+<script defer src="js/search.js"></script>
 <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/cuisines.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/search.css">
 
 <!--Script for slider-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

@@ -1,0 +1,130 @@
+.about-container{
+    margin: auto;
+    padding-top: 100px;
+}
+
+.about-container .content-section{
+    width: 100%;
+}
+
+.about-container .content-section p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.about-container .content-section h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.about-container .content-section .content h3{
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+
+.about-container .image-section{
+    float: right;
+    width: 50%;
+}
+
+.about-container .image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    height: 60px;
+    width: 200px;
+}
+
+.button a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    background-color: #b3e6ff;
+    line-height: 60px;
+    text-align: center;
+    padding: 12px 50px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.button a:hover{
+    background-color: #99ff66;
+}
+
+@media screen and (max-width: 767px) {
+.about-container {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.about-container .content-section {
+    width: 100%;
+    float: none;
+}
+
+.about-container .image-section {
+    width: 100%;
+    float: top;
+    margin-bottom: 30px;
+}
+
+.about-container .image-section img {
+    width: 100%;
+    height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-width: 1023px){
+.about-container {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.about-container .content-section {
+    width: 100%;
+    float: none;
+}
+
+.about-container .image-section {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+}
+
+.about-container .image-section img {
+    width: 100%;
+    height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+.about-container {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.about-container .content-section {
+    width: 100%;
+    float: none;
+}
+
+.about-container .image-section {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+}
+
+.about-container .image-section img {
+    width: 100%;
+    height: auto;
+    }
+}

@@ -14,6 +14,8 @@
         ?>  
         </header>
         
+        <?php include "search.php" ?>;
+        
         <div class="section">
             <div class="about-container">
                 <div class="content-section">
@@ -46,7 +48,7 @@
                     </div>
                 </div>
                 <div class="image-section">
-                    <img src="images/chinese-noodles.jpg">
+                    <img src="images/about1.jpg">
                 </div>
             </div>
         </div>
