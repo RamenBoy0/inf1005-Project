@@ -24,7 +24,7 @@
             served with steamed white rice.
         </p>
         <div class="recipe-img">
-            <img src="image/teriyakichicrice.jpg" alt="Teriyaki Chicken Rice">
+            <img src="images/teriyakichicrice.jpg" alt="Teriyaki Chicken Rice">
         </div>
         <div class="recipe-icons">
           <div class="box">

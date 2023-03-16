@@ -25,7 +25,7 @@
                 <article class="col-sm">
                     <h5>Kung Pao Chicken</h5>
                     <figure>
-                        <img src="image/kungpaochic.jpg" class="img-thumbnail" alt="Kung Pao Chicken"/>
+                        <img src="images/kungpaochic.jpg" class="img-thumbnail" alt="Kung Pao Chicken"/>
                     </figure>
                     <div class="button">
                         <a href="kungpaochic.php" >View More</a>
@@ -34,7 +34,7 @@
                 <article class="col-sm">
                     <h5>Sweet and Sour Pork</h5>
                     <figure>
-                        <img src="image/sweetandsourpork.jpg" class="img-thumbnail" alt="Sweet & Sour Pork"/>
+                        <img src="images/sweetandsourpork.jpg" class="img-thumbnail" alt="Sweet & Sour Pork"/>
                     </figure>
                     <div class="button">
                         <a href="sweet&sourpork.php" >View More</a>

@@ -23,7 +23,7 @@
             pieces of pork with a tangy and sweet sauce. 
         </p>
         <div class="recipe-img">
-            <img src="image/sweetandsourpork.jpg" alt="Sweet & Sour Pork">
+            <img src="images/sweetandsourpork.jpg" alt="Sweet & Sour Pork">
         </div>
         <div class="recipe-icons">
           <div class="box">

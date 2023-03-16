@@ -19,20 +19,26 @@
                 <div class="box-container">
 
                     <div class="box">
-                        <img src="images/chinese-noodles.jpg" alt="">
+                        <img src="images/sweetandsourpork.jpg" alt="">
                         <h3>Chinese</h3>
                         <a href="chinese.php" class="btn">View Recipe</a>
                     </div>
 
                     <div class="box">
-                        <img src="images/pizza.jpg" alt="">
+                        <img src="images/cheeseburger.jpg" alt="">
                         <h3>Western</h3>
                         <a href="western.php" class="btn">View Recipe</a>
                     </div>
                     
                     <div class="box">
-                        <img src="images/japanese-sushi-platter.jpg" alt="">
+                        <img src="images/chawanmushi.jpg" alt="">
                         <h3>Japanese</h3>
+                        <a href="japanese.php" class="btn">View Recipe</a>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="images/briyani.jpg" alt="">
+                        <h3>Indian</h3>
                         <a href="japanese.php" class="btn">View Recipe</a>
                     </div>
                 </div>

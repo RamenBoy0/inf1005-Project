@@ -24,7 +24,7 @@
             pepper, and sometimes cream.
         </p>
         <div class="recipe-img">
-            <img src="image/carbonarapasta.jpg" alt="Carbonara Pasta">
+            <img src="images/carbonarapasta.jpg" alt="Carbonara Pasta">
         </div>
         <div class="recipe-icons">
           <div class="box">

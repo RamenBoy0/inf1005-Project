@@ -23,7 +23,7 @@
             chunks of chicken stir-fried with peanuts and vegetables in a spicy sauce.
         </p>
         <div class="recipe-img">
-            <img src="image/kungpaochic.jpg" alt="Kung Pao Chicken">
+            <img src="images/kungpaochic.jpg" alt="Kung Pao Chicken">
         </div>
         <div class="recipe-icons">
           <div class="box">

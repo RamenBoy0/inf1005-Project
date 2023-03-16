@@ -34,7 +34,7 @@
             of South Asia, as well as in the Middle East and beyond.
         </p>
         <div class="recipe-img">
-            <img src="image/briyani.jpg" alt="Briyani">
+            <img src="images/briyani.jpg" alt="Briyani">
         </div>
         <div class="recipe-icons">
           <div class="box">

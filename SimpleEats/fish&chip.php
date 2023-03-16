@@ -23,7 +23,7 @@
             fish and deep-fried chips (French fries). 
         </p>
         <div class="recipe-img">
-            <img src="image/fishandchips.jpg" alt="Fish & Chips">
+            <img src="images/fishandchips.jpg" alt="Fish & Chips">
         </div>
         <div class="recipe-icons">
           <div class="box">

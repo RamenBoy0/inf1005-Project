@@ -23,7 +23,7 @@
                 <article class="col-sm">
                     <h5>Chawanmushi</h5>
                     <figure>
-                        <img src="image/chawanmushi.jpg" class="img-thumbnail" alt="Chawanmushi"/>
+                        <img src="images/chawanmushi.jpg" class="img-thumbnail" alt="Chawanmushi"/>
                     </figure>
                     <div class="button">
                         <a href="chawanmushi.php" >View More</a>
@@ -32,7 +32,7 @@
                 <article class="col-sm">
                     <h5>Pork Ramen</h5>
                     <figure>
-                        <img src="image/porkramen.jpg" class="img-thumbnail" alt="Pork Ramen"/>
+                        <img src="images/porkramen.jpg" class="img-thumbnail" alt="Pork Ramen"/>
                     </figure>
                     <div class="button">
                         <a href="porkramen.php" >View More</a>
@@ -41,7 +41,7 @@
                 <article class="col-sm">
                     <h5>Teriyaki Chicken with Rice</h5>
                     <figure>
-                        <img src="image/teriyakichicrice.jpg" class="img-thumbnail" alt="Teriyaki Chicken Rice"/>
+                        <img src="images/teriyakichicrice.jpg" class="img-thumbnail" alt="Teriyaki Chicken Rice"/>
                     </figure>
                     <div class="button">
                         <a href="teriyakichic.php" >View More</a>

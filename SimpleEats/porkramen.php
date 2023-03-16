@@ -26,7 +26,7 @@
             onions, and may be seasoned with soy sauce, miso, or other seasonings.
         </p>
         <div class="recipe-img">
-            <img src="image/porkramen.jpg" alt="Pork Ramen">
+            <img src="images/porkramen.jpg" alt="Pork Ramen">
         </div>
         <div class="recipe-icons">
           <div class="box">

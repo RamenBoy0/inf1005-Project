@@ -23,7 +23,7 @@
                 <article class="col-sm">
                     <h5>Fish & Chips</h5>
                     <figure>
-                        <img src="image/fishandchips.jpg" class="img-thumbnail" alt="Fish & Chips"/>
+                        <img src="images/fishandchips.jpg" class="img-thumbnail" alt="Fish & Chips"/>
                     </figure>
                     <div class="button">
                         <a href="fish&chip.php" >View More</a>
@@ -32,7 +32,7 @@
                 <article class="col-sm">
                     <h5>Cheese Burger</h5>
                     <figure>
-                        <img src="image/cheeseburger.jpg" class="img-thumbnail" alt="Cheese Burger"/>
+                        <img src="images/cheeseburger.jpg" class="img-thumbnail" alt="Cheese Burger"/>
                     </figure>
                     <div class="button">
                         <a href="cheeseburger.php" >View More</a>
@@ -41,7 +41,7 @@
                 <article class="col-sm">
                     <h5>Egg & Carbonara Pasta</h5>
                     <figure>
-                        <img src="image/carbonarapasta.jpg" class="img-thumbnail" alt="Egg & Carbonara Pasta"/>
+                        <img src="images/carbonarapasta.jpg" class="img-thumbnail" alt="Egg & Carbonara Pasta"/>
                     </figure>
                     <div class="button">
                         <a href="carbonarapasta.php" >View More</a>
@@ -50,7 +50,7 @@
                 <article class="col-sm">
                     <h5>Tomato & Scallop Pasta</h5>
                     <figure>
-                        <img src="image/scalloppasta.jpg" class="img-thumbnail" alt="Scallop Pasta"/>
+                        <img src="images/scalloppasta.jpg" class="img-thumbnail" alt="Scallop Pasta"/>
                     </figure>
                     <div class="button">
                         <a href="scalloppasta.php" >View More</a>

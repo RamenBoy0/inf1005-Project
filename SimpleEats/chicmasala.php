@@ -25,7 +25,7 @@
             cuisine, such as cumin, coriander, turmeric, and garam masala.
         </p>
         <div class="recipe-img">
-            <img src="image/chicmasala.jpg" alt="Chicken Masala">
+            <img src="images/chicmasala.jpg" alt="Chicken Masala">
         </div>
         <div class="recipe-icons">
           <div class="box">

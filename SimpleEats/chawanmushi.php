@@ -36,7 +36,7 @@
             in season.
         </p>
         <div class="recipe-img">
-            <img src="image/chawanmushi.jpg" alt="Chawanmushi">
+            <img src="images/chawanmushi.jpg" alt="Chawanmushi">
         </div>
         <div class="recipe-icons">
           <div class="box">

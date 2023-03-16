@@ -29,7 +29,7 @@
             cheese, and flavorful toppings make for a delicious and satisfying meal.
         </p>
         <div class="recipe-img">
-            <img src="image/cheeseburger.jpg" alt="Cheese Burger">
+            <img src="images/cheeseburger.jpg" alt="Cheese Burger">
         </div>
         <div class="recipe-icons">
           <div class="box">

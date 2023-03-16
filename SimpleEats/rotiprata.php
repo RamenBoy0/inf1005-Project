@@ -23,7 +23,7 @@
             Singapore and Malaysia.
         </p>
         <div class="recipe-img">
-            <img src="image/rotiprata.jpg" alt="Roti Prata">
+            <img src="images/rotiprata.jpg" alt="Roti Prata">
         </div>
         <div class="recipe-icons">
           <div class="box">

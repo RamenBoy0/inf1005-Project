@@ -29,7 +29,7 @@
             perfect for any occasion.
         </p>
         <div class="recipe-img">
-            <img src="image/scalloppasta.jpg" alt="scalloppasta">
+            <img src="images/scalloppasta.jpg" alt="scalloppasta">
         </div>
         <div class="recipe-icons">
           <div class="box">
