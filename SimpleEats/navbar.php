@@ -9,7 +9,7 @@ $fname = $_SESSION["name"];
     <nav class="navbar">
         <a class="active" href="index.php">Home</a>
         <a href="about.php">About</a>
-        <a href="#about">Cuisine</a>
+        <a href="view_all_recipes.php">Recipes</a>
         <a href="faq.php">FAQ</a>
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="add_recipe.php">Add Recipe</a>
@@ -24,7 +24,9 @@ $fname = $_SESSION["name"];
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="#"><?php echo $fname; ?></a>
         <?php endif; ?>
-        <a class="fas fa-search" id="search-icon" aria-hidden = "true"></a>
+        <?php if ($_SESSION["logged_in"] == true): ?>
+        <a href="search.php" class="fas fa-search" aria-hidden = "true"></a>
+        <?php endif; ?>
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="favourites.php" class="fas fa-heart" aria-hidden = "true"></a>
          <?php endif; ?>

@@ -48,11 +48,13 @@
                     </div>
                 </div>
                 <div class="image-section">
-                    <img src="images/about1.jpg">
+                <img src="images/about1.jpg">
                 </div>
             </div>
+            
         </div>
     </body>
+    
     <footer>
     <?php
         include "footer.php";

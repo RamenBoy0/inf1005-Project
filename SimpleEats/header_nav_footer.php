@@ -32,7 +32,12 @@ crossorigin="anonymous">
 </script>
 
 <script defer src="js/home.js"></script>
+<script defer src="js/contactus.js"></script>
 <link rel="stylesheet" href="css/nav_footer.css">
 <link rel="stylesheet" href="css/reg_login.css">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/cuisines.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/contactus.css">
 
 
