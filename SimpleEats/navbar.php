@@ -11,6 +11,7 @@ $fname = $_SESSION["name"];
         <a href="about.php">About</a>
         <a href="view_all_recipes.php">Recipes</a>
         <a href="faq.php">FAQ</a>
+        <a href="contactus.php">ContactUs</a>
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="add_recipe.php">Add Recipe</a>
          <?php endif; ?>

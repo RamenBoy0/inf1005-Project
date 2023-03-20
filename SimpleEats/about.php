@@ -22,6 +22,9 @@
                     <div class="title">
                         <h1>About</h1>
                     </div>
+                    <div class="image-section">
+                    <img src="images/about1.jpg">
+                    </div>
                     <div class="content">
                         <h3>Welcome!!</h3>
                         <p>Welcome to our recipe website, where we offer a vast collection of delicious and easy-to-follow recipes for all occasions. 
@@ -34,24 +37,11 @@
                         
                         <h3>Explore our recipes here</h3>
                         <div class="button">
-                            <a href="chinese.php" >Chinese</a>
-                        </div>
-                        <div class="button">
-                            <a href="western.php" >Western</a>
-                        </div>
-                        <div class="button">
-                            <a href="japanese.php" >Japanese</a>
-                        </div>
-                        <div class="button">
-                            <a href="indian.php" >Indian</a>
+                            <a href="chinese.php" >View Recipes</a>
                         </div>
                     </div>
                 </div>
-                <div class="image-section">
-                <img src="images/about1.jpg">
-                </div>
             </div>
-            
         </div>
     </body>
     

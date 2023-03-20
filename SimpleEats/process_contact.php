@@ -62,7 +62,7 @@ function saveMemberToDB()
     else    
     {
         // Prepare the statement:
-        $stmt = $conn->prepare("INSERT INTO world_of_food_message (message, fname, email) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO world_of_food_contact (message, fname, email) VALUES (?, ?, ?)");
         
         // Bind & execute the query statement:
         $stmt->bind_param("ssss", $message, $fname, $email);
