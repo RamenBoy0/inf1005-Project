@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>  <?php include "navbar.php";?></header>
-    <main class="container" id="log">
+    <main class="form-container" id="log">
     <h1>Login Page</h1>
         <p>To sign up, please go to the
             <a href="register.php">Sign In page</a>.

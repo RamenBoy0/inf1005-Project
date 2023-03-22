@@ -17,7 +17,7 @@
             ?>
         </header>
         
-        <div class="container">
+        <div class="form-container">
             <section>
                 <br><br><br>
             <h1>Add Recipe</h1>

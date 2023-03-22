@@ -40,5 +40,10 @@ crossorigin="anonymous">
 <script defer src="js/home.js"></script>
 <link rel="stylesheet" href="css/nav_footer.css">
 <link rel="stylesheet" href="css/reg_login.css">
-
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/add_recipe.css">
+<link rel="stylesheet" href="css/cuisines.css">
+<link rel="stylesheet" href="css/faq.css">
+<link rel="stylesheet" href="css/pagination.css">
+<link rel="stylesheet" href="css/recipes.css">
 

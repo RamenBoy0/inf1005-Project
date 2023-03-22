@@ -29,6 +29,7 @@
             <div class="jumbotron text-center">
                <h1 class="display-2">Frequently Asked Questions</h1>
            </div>
+            <br>
 
          
         <div class="row">

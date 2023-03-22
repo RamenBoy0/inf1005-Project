@@ -30,9 +30,15 @@ p{
 
 #contactus{
   width: 100%;
-  height: 1000px;
+  height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   padding: 100px;
   padding-top: 100px;
+}
+
+.form-container {
+    background-image: linear-gradient(#fdfcfb, #e2d1c3);
+    height: auto;
+    width: auto;
 }

@@ -9,7 +9,7 @@
   <label for="search-box" class="fas fa-search"></label>
   <i class="fas fa-times" id="close"></i>
     </form>   
-    <div class="container" id ="reg">
+    <div class="form-container" id ="reg">
     <h1>Member Registration</h1>
         <p>For existing members, please go to the
             <a href="login.php">Login Page</a>

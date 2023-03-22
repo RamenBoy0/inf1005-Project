@@ -16,7 +16,7 @@
                         <a href="contactus.php">Contact Us</a>
                         <a href="#">+80 000</a>
                         <a href="#">service@simpleeats.com.sg</a>
-                        <a href="#">10 Bayfront Ave, L1-69, Singapore 016989</a>
+                        <a href="#">10 Dover Dr, Singapore 138683</a>
                     </div>
 
                     <div class="box">

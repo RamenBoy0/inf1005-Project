@@ -256,12 +256,14 @@ header .flex .icons a:hover{
 /*CSS for footer*/
 footer{
     position: relative;
+    margin: auto;
 }
 
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:1.5rem;
+    margin: auto;
 }
 
 .footer .box-container .box h3{
@@ -304,7 +306,7 @@ footer{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media screen and (max-width: 767px){
 
     html{
         font-size: 55%;
@@ -317,11 +319,15 @@ footer{
     section{
         padding:2rem;
     }
+    
+    footer {
+        margin: auto;
+    }
 
 
 }
 
-@media (max-width:768px){
+@media screen and (max-width: 767px) and (max-height: 1023px){
 
     header .flex .icons #menu-bars{
         display: inline-block;
@@ -358,17 +364,13 @@ footer{
     .home .home-slider .slide .content h3{
         font-size: 4.5rem;
     }
+    
+    footer {
+        margin: auto;
+    }
 
 }
 
-@media (max-width:450px){
+@media screen and (max-width: 1024px){
 
-    html{
-        font-size: 50%;
-    }
-
-    .dishes .box-container .box img{
-        height:auto;
-        width: 100%;
-    }
 }

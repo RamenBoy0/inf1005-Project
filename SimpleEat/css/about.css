@@ -1,10 +1,14 @@
 .about-container{
     margin: auto;
     padding-top: 100px;
+    font-family: 'Work Sans', sans-serif;
+    width: 80%;
+    height:auto;
 }
 
 .about-container .content-section{
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .about-container .content-section p{
@@ -28,7 +32,8 @@
 
 .about-container .image-section{
     float: right;
-    width: 50%;
+    width: 60%;
+    margin: auto;
 }
 
 .about-container .image-section img{
@@ -63,7 +68,6 @@
 @media screen and (max-width: 767px) {
 .about-container {
     width: 100%;
-    padding-top: 50px;
 }
 
 .about-container .content-section {
@@ -71,22 +75,24 @@
     float: none;
 }
 
+.about-container .content-section p{
+    text-align: center;
+}
+
 .about-container .image-section {
     width: 100%;
-    float: top;
-    margin-bottom: 30px;
+    float: none;
 }
 
 .about-container .image-section img {
     width: 100%;
     height: auto;
-    }
+}
 }
 
-@media screen and (max-width: 767px) and (max-width: 1023px){
+@media screen and (max-width: 767px) and (max-height: 1023px){
 .about-container {
     width: 100%;
-    padding-top: 50px;
 }
 
 .about-container .content-section {
@@ -94,22 +100,25 @@
     float: none;
 }
 
+.about-container .content-section p{
+    text-align: center;
+}
+
 .about-container .image-section {
     width: 100%;
     float: none;
-    margin-bottom: 30px;
 }
 
 .about-container .image-section img {
     width: 100%;
     height: auto;
-    }
 }
+}
+
 
 @media screen and (max-width: 1024px) {
 .about-container {
     width: 100%;
-    padding-top: 50px;
 }
 
 .about-container .content-section {
@@ -118,7 +127,6 @@
 }
 
 .about-container .image-section {
-    width: 100%;
     float: none;
     margin-bottom: 30px;
 }
@@ -126,5 +134,5 @@
 .about-container .image-section img {
     width: 100%;
     height: auto;
-    }
+}
 }

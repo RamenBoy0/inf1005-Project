@@ -4,6 +4,7 @@ body{
 .faq-heading{
     border-bottom: #777;
     padding: 20px 60px;
+    margin: auto;
 }
 
 .hr-line{
@@ -24,9 +25,6 @@ body{
 }
 .faq-body{
    margin: auto;
-    /* text-align: center; */
-   padding: auto;
-
 }
 
 
