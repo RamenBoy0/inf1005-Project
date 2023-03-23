@@ -2,11 +2,17 @@
 session_start();
 $fname = $_SESSION["name"];
 ?>
-<section class="flex">
+    
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
 
     <a href="index.php" class="logo"><i class="fas fa-utensils"></i>Simple Eats</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <nav class="navbar">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
         <a class="active" href="index.php">Home</a>
         <a href="about.php">About</a>
         <a href="view_all_recipes.php">Recipes</a>
@@ -18,9 +24,9 @@ $fname = $_SESSION["name"];
         <a href="view_recipe.php">My Recipe</a>
          <?php endif; ?>
         
-    </nav>
-
-    <div class="icons">
+    </ul>
+    
+    <ul class="navbar-icons">
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="#"><?php echo $fname; ?></a>
         <?php endif; ?>
@@ -35,6 +41,9 @@ $fname = $_SESSION["name"];
         <a href="login.php" class="far fa-id-card"></a>
         <?php endif; ?> 
         <a href = "logout.php" class="fas fa-sign-out-alt"></a>
+    </ul> 
+        
     </div>
+    
+</nav>
 
-</section>

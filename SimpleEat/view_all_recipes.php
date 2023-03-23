@@ -52,8 +52,9 @@
         ?>
         
 <main class="cuisine-container">
-                    <div class="jumbotron text-center">
-               <h1 class="display-2">Latest Recipes</h1>
+    
+            <div class="header-container">
+               <h1>Latest Recipes</h1>
            </div>
     <br>
     <div class="row">

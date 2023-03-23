@@ -1,6 +1,6 @@
 #reg{
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   padding: 100px;
@@ -9,7 +9,7 @@
 
 #log{
   width: 100%;
-  height: 450px;
+  height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   padding: 100px;

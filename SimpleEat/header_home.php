@@ -17,6 +17,11 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous">
 </script>
 
+ <link rel="stylesheet" 
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+ integrity=
+ "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+ crossorigin="anonymous">
 
 <!--Bootstrap JS-->
 <script defer
@@ -28,6 +33,7 @@ crossorigin="anonymous">
 
 <script defer src="js/home.js"></script>
 <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/nav_footer.css">
 
 <!--Script for slider-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

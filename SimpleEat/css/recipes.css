@@ -2,6 +2,21 @@
     padding:15px;
 }
 
+.header-container{
+    width: 100%;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ffffcc;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
 .cuisine-container {
     width: 80%;
     margin:auto;
