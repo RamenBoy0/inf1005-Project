@@ -1,11 +1,14 @@
 /*slider*/
+.home .home-slider {
+    margin:auto;
+}
+
 .home .home-slider .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap:2rem; 
     padding-top: 50px;
-    margin:auto;
     justify-content: center;
 }
 
@@ -144,11 +147,21 @@
 }
 
 @media screen and (max-width: 767px){
-
+    .home .home-slider .slide .content h3{
+    font-size: 40px;
+    }
+    .home .home-slider .slide .content p{
+    font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) and (max-height: 1023px){
-
+    .home .home-slider .slide .content h3{
+    font-size: 40px;
+    }
+    .home .home-slider .slide .content p{
+    font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1024px){

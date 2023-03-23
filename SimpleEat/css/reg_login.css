@@ -3,8 +3,9 @@
   height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
-  padding: 100px;
+  padding: 50px;
   padding-top: 100px;
+  margin: auto;
 }
 
 #log{
@@ -12,8 +13,9 @@
   height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
-  padding: 100px;
+  padding: 50px;
   padding-top: 100px;
+  margin: auto;
 }
 
 p{
@@ -33,8 +35,9 @@ p{
   height: auto;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
-  padding: 100px;
+  padding: 50px;
   padding-top: 100px;
+  margin: auto;
 }
 
 .form-container {
