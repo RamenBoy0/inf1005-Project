@@ -35,9 +35,9 @@ $fname = $_SESSION["name"];
         <?php endif; ?>
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="favourites.php" class="fas fa-heart" aria-hidden = "true"></a>
-         <?php endif; ?>
-        <a href="register.php" class="fa fa-registered" aria-hidden = "true"></a>
+        <?php endif; ?>
         <?php if (!isset($_SESSION["logged_in"])): ?>
+        <a href="register.php" class="fa fa-registered" aria-hidden = "true"></a>
         <a href="login.php" class="far fa-id-card"></a>
         <?php endif; ?> 
         <a href = "logout.php" class="fas fa-sign-out-alt"></a>
@@ -46,4 +46,3 @@ $fname = $_SESSION["name"];
     </div>
     
 </nav>
-
