@@ -1,0 +1,109 @@
+.faq-container {
+    margin: auto;
+    padding-top: 50px;
+    font-family: 'Work Sans', sans-serif;
+    width: 80%;
+    height:auto;
+}
+
+.header-container{
+    width: 100%;
+    margin:auto;
+    background: #ffffcc;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.hr-line{
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+   margin: auto;
+   font-size: 20px;
+}
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activesign,.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.activesign:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+ul.nav.nav-tabs > li{
+    display: inline-block;
+    line-height: 25px;
+    height: 100%;
+    text-transform:uppercase;
+}
+ul.nav.nav-tabs > li a{
+    display:block;
+    padding:15px;
+    color: #282425!important;
+	
+}
+ul.nav.nav-tabs > li a:hover, ul.nav.nav-tabs > li:hover{
+    background:	#27ae60;
+    color:#fff!important;
+    text-decoration: none!important;
+}
+ul.nav.nav-tabs > li a.active{
+    background:	#192a56;
+    color:#fff!important;
+    text-decoration: none!important;
+}
+
+#tabbing{
+    font-size: 14px;
+}
+
+.jumbotron{
+    border-radius: 20px;
+}
