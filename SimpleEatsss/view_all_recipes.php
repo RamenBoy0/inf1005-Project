@@ -75,19 +75,16 @@
                 
             <img src='images/<?php echo $row["photo"]; ?>'>
   
-              <i>
                   <div class="overlay" style="width:300px;">
                   <?php echo "Recipe by: ", strstr($row['email'], '@', true); ?>
                  </div>
-              </i>
            
             </figure>
                 
             <figcaption
             
             <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
-                >
-            </div>
+                
             
             <div class="button">
                 <a href="<?php if ($_SESSION["logged_in"] == true): ?>view_all_recipe_details.php#<?php echo $row['id'];?>

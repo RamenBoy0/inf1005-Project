@@ -78,8 +78,7 @@
             
             <figcaption
             <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
-                >
-            </div>
+               
             
             <div class="button">
                 <a href="<?php if ($_SESSION["logged_in"] == true): ?>view_all_recipe_details.php?id=<?php echo $row['recipe_name'];?>

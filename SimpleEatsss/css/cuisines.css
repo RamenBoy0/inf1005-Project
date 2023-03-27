@@ -1,7 +1,9 @@
 .cuisine-container {
-    width: 80%;
+    width: 90%;
     margin:auto;
     padding-top: 100px;
+    background-image: linear-gradient(#ffffcc, #ffffb3, #ffff99);
+    background-size: auto;
 }
 
 .cuisine-container h3 {
@@ -87,10 +89,6 @@
     border-radius: 10px;
     transition: transform 400ms;
 }
-
-/*.cuisine-container .row .col-sm img:hover {
-    transform: scale(1.2);
-}*/
 
 .dialog {
     position: absolute;
