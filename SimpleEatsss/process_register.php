@@ -57,7 +57,7 @@ else
 }
 
             
-            $targetDir = "/var/www/html/SimpleEat/images/";
+            $targetDir = "/var/www/html/SimpleEatsss/images/";
             $fileName = basename($_FILES["upload"]["name"]);
             $targetFilePath = $targetDir . $fileName;
             $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);

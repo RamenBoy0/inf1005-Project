@@ -76,7 +76,9 @@
            
             </figure>
             
+            <figcaption
             <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
+                >
             </div>
             
             <div class="button">

@@ -127,8 +127,10 @@
                       </i>
 
                     </figure>
-
-                    <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
+                        
+                    <figcaption    
+                        <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
+                        >
                     </div>
                     <div class="button">
                 <a href="<?php if ($_SESSION["logged_in"] == true): ?>view_recipe_name.php?id=<?php echo $row['recipe_name'];?>
