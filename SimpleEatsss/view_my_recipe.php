@@ -52,6 +52,11 @@
        <a href="#" onclick="addToFavorites(<?php echo $row['id']; ?>)" class="heart-icon fas fa-heart fa-3x"></a>
                 <img src='images/<?php echo $row["photo"]; ?>' />
             </figure>
+            
+            <figcaption
+            
+            <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
+            
             <div class="button">
                 <a href="view_my_recipe_details.php#<?php echo $row["id"]; ?>" >View Recipe</a>
             </div>
