@@ -46,7 +46,7 @@ h2{
     float: right;
     width: 60%;
     margin: auto;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .image-section img{
@@ -71,6 +71,7 @@ h2{
     width: 100%;
     height: auto;
     padding-right: 15px;
+    border-radius: 25%;
 }
 
 .button {

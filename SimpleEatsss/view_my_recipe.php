@@ -73,17 +73,19 @@
                <a href="#" onclick="addToFavorites(<?php echo $row['id']; ?>)" class="heart-icon fas fa-heart fa-3x"></a>
                    <?php endif; ?>
                
-                
+               
             <img src='images/<?php echo $row["photo"]; ?>'>
-  
-                  <div class="overlay" style="width:300px;">
-                  <?php echo "Recipe by: ", strstr($row['email'], '@', true); ?>
-                 </div>
-           
-            </figure>
-                
             
-            <?php echo "<h5>"."Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}"."</h5>"; ?>
+            </figure>
+  
+            <div class="overlay" style="width:300px;">
+                <?php echo "Recipe by: ", strstr($row['email'], '@', true); ?>
+            </div>
+           
+                
+            <figcaption
+                
+            <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
                 
             
             <div class="button">
