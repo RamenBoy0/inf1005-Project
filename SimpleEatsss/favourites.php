@@ -50,8 +50,8 @@
         ?>
         
 <main class="cuisine-container">
-                    <div class="jumbotron text-center">
-               <h1 class="display-2">Favourite Recipes</h1>
+            <div class="header-section">
+               <h1>Favourite Recipes</h1>
            </div>
     <br>
     <div class="row">

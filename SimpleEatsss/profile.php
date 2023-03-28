@@ -11,7 +11,7 @@ $email = $_SESSION["email"];
         <?php
         include "header_nav_footer.php";
         ?>
-  
+    <script defer src="js/delete_member.js"></script>
     </head>
  
     <body>
@@ -20,6 +20,29 @@ $email = $_SESSION["email"];
             include "navbar.php";
             ?>
         </header>
+        
+                                                <!-- Create the modal -->
+    <div class="modal fade" id="delete-member-modal" tabindex="-1" role="dialog" aria-labelledby="favorite-member-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="favorite-member-modal-label">Close Account</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+            
+                    <p>Do you want to close account?</p>
+                    <input type="hidden" id="member-id" name="member-id" value="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="delete-member-btn">Yes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
        
           
             <?php 
@@ -63,6 +86,8 @@ $email = $_SESSION["email"];
                         <div class="button">
                         <a href="profile_change_password.php?id=<?php echo $row['member_Id']; ?>">Change Password</a>
                         </div>
+                       <a href="#" data-toggle="modal" data-target= "#delete-member-modal" onClick="setMemberId(<?php echo $row["member_id"]; ?>)"><i class='fas fa-trash' style='font-size:24px;color: red'></i></a>
+
                         
                     </div>
                     
