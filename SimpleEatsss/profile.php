@@ -39,20 +39,28 @@ $email = $_SESSION["email"];
             ?>
                 
             <main class="cuisine-container">
-                <h3>Profile</h3>
-                <br>
-                <div class="profile-container" style="display: flex;align-items: center;">
-                    <figure>
-                        <img src='images/<?php echo $row["upload"]; ?>' style="height:400px;width:400px;border-radius: 50%;">
-                    </figure>
-                    <div class="profile-details" style="display: flex;flex-direction: column;margin-left: 50px;">
+                
+                <div class="header-section">
+                <h1>Profile</h1>
+                </div>
+                
+                <div class="profile-container" >
+                    
+                    <div class ="image-section">
+                        <img src='images/<?php echo $row["upload"]; ?>'>
+                    </div>
+                    
+                    <div class="content-section">
                        
                         <h5>First Name : <?php echo $row['fname']; ?></h5><br>
                         <h5>Last Name : <?php echo $row['lname']; ?></h5><br>
                         <h5>Email : <?php echo $row['email']; ?></h5><br>
                         
                         <div class="button">
-                        <a href="profile_edit.php?id=<?php echo $row['member_id']; ?>" style="margin-right: 30px;">Edit Profile</a>
+                        <a href="profile_edit.php?id=<?php echo $row['member_id']; ?>" >Edit Profile</a>
+                        </div>
+                
+                        <div class="button">
                         <a href="profile_change_password.php?id=<?php echo $row['member_Id']; ?>">Change Password</a>
                         </div>
                         
@@ -60,22 +68,18 @@ $email = $_SESSION["email"];
                     
                 </div>
                 
-     
-
-                 
             <?php
                 }
             ?>
                 
-            </main>
-       
-
-        <footer>
+            </main>   
+    </body>
+    
+    <footer>
         <?php
             include "footer.php";
         ?>
-        </footer>
-    </body>
+    </footer>
 
 
 </html>
