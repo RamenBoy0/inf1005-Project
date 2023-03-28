@@ -23,11 +23,11 @@
         </header>
         
         <main>
-        <div class="container"> 
+        <div class="faq-container"> 
         <section> 
             
-            <div class="jumbotron text-center">
-               <h1 class="display-2">Frequently Asked Questions</h1>
+            <div class="header-section">
+               <h1>Frequently Asked Questions</h1>
            </div>
 
          

@@ -5,8 +5,6 @@ include "header_nav_footer.php";
         <!-- Custom JS -->
         <script defer src="js/add_recipe.js"></script>
         <link rel="stylesheet" href="css/cuisines.css">
-
-
   
     </head>
  

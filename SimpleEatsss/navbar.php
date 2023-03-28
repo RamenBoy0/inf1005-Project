@@ -26,7 +26,7 @@ $email = $_SESSION["email"];
 //    }
 //}
 ?>
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <a href="index.php" class="logo"><i class="fas fa-utensils"></i>Simple Eats</a>
     

@@ -4,15 +4,14 @@ $fname = $_SESSION["fname"];
 $lname = $_SESSION["lname"];
 $email = $_SESSION["email"];
 ?>
+    <head>
+    <?php
+    include "header_nav_footer.php";
+    ?>
 
-<?php
-include "header_nav_footer.php";
-?>
-
-        <!-- Custom JS -->
-         <script defer src="js/delete_recipe.js"></script>
+    <!-- Custom JS -->
+     <script defer src="js/delete_recipe.js"></script>
         <link rel="stylesheet" href="css/cuisines.css">
-
 
   
     </head>

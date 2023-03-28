@@ -38,8 +38,8 @@
         ?>
         
 <main class="cuisine-container">
-    <div class ="jumbotron text-center">
-        <h1 class="dispay-2">My Recipes</h1>
+    <div class ="header-section">
+        <h1>My Recipes</h1>
     </div>
     <div class="row">
         <?php 

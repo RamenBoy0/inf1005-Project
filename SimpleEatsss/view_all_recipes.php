@@ -71,19 +71,18 @@
                                                  <?php if ($_SESSION["logged_in"] == true): ?>
                <a href="#" onclick="addToFavorites(<?php echo $row['id']; ?>)" class="heart-icon fas fa-heart fa-3x"></a>
                    <?php endif; ?>
-               
-                
+                       
             <img src='images/<?php echo $row["photo"]; ?>'>
-  
-                  <div class="overlay" style="width:300px;">
-                  <?php echo "Recipe by: ", strstr($row['email'], '@', true); ?>
-                 </div>
-           
+
             </figure>
+                
+            <div class="overlay" style="width:300px;">
+                <?php echo "Recipe by: ", strstr($row['email'], '@', true); ?>
+            </div>
                 
             <figcaption
             
-            <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?>
+            <?php echo "<p>Prep Time: {$row['prep_time']} min | Cook Time: {$row['cook_time']} min | Serving: {$row['serving']}</p>"; ?> 
                 
             
             <div class="button">
