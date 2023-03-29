@@ -1,16 +1,16 @@
-<main class="footer">
+<div class="footer">
 
     <div class="box-container">
 
         <div class="foot-box">
-            <h3>Quick Links</h3>
+            <h2>Quick Links</h2>
             <a href="index.php">Home</a>
             <a href="#">Cuisines</a>
             <a href="about.php">About</a>
         </div>
 
         <div class="foot-box">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <a href="contactus.php">Contact Us</a>
             <a href="#">+80 000</a>
             <a href="#">service@simpleeats.com.sg</a>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="foot-box">
-            <h3>Follow us</h3>
+            <h2>Follow us</h2>
             <a href="https://www.facebook.com/">Facebook</a>
             <a href="https://twitter.com/i/flow/signup">Twitter</a>
             <a href="https://www.instagram.com/">Instagram</a>
@@ -28,4 +28,4 @@
 
     <div class="credit"> Copyright @ 2023 by <span>Simple Eats</span> </div>
 
-</main>
+</div>

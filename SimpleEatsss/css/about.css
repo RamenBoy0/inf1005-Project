@@ -179,4 +179,7 @@ h2{
     width: 100%;
     height: auto;
 }
+.header-section h1{
+    font-size: 30px;
+}
 }

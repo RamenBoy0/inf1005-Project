@@ -105,8 +105,10 @@
     
       <div class="center">
      <div class="pagination">    
-      <?php  
-        $query = "SELECT COUNT(*) FROM world_of_food_recipes";   
+      <?php
+      
+        $email = $_SESSION["email"];
+        $query = "SELECT COUNT(*) FROM world_of_food_recipes";  
         $rs_result = mysqli_query($conn, $query);     
         $row = mysqli_fetch_row($rs_result);     
         $total_records = $row[0];     

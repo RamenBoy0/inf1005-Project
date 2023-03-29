@@ -101,7 +101,7 @@
 
                         if (! empty($row)) {
                             $hashedPassword = $row["password"];
-                            echo "<h1>" . $row["password"] . "</h1>";
+//                            echo "<h1>" . $row["password"] . "</h1>";
                        
                             //$password = PASSWORD_HASH($_POST["pwd"], PASSWORD_DEFAULT);
                             if (password_verify($_POST["current_pwd"] , $hashedPassword)) {

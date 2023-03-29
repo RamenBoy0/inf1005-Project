@@ -104,7 +104,7 @@ include "header_nav_footer.php";
                 
                 <section class="recipe-ingredient">
                     <h4>Ingredients</h4>
-                    <p class="single-ingredient"><?php echo $row_recipe["ingredients"]; ?></p>
+                    <p class="single-ingredient"><?php echo nl2br($row_recipe["ingredients"]); ?></p>
                 </section>
                   
                 <section class="recipe-guide">
@@ -112,7 +112,7 @@ include "header_nav_footer.php";
                     <div class="steps">
                         
                       <p>
-                        <?php echo $row_recipe["methods"]; ?>
+                        <?php echo nl2br($row_recipe["methods"]); ?>
                       </p>
                     </div>
                 </section>

@@ -79,17 +79,18 @@ $email = $_SESSION["email"];
                         <h5>Last Name : <?php echo $row['lname']; ?></h5><br>
                         <h5>Email : <?php echo $row['email']; ?></h5><br>
                         
-                        <div class="button">
-                        <a href="profile_edit.php?id=<?php echo $row['member_id']; ?>" >Edit Profile</a>
-                        </div>
-                
-                        <div class="button">
-                        <a href="profile_change_password.php?id=<?php echo $row['member_Id']; ?>">Change Password</a>
-                        </div>
-                       <a href="#" data-toggle="modal" data-target= "#delete-member-modal" onClick="setMemberId(<?php echo $row["member_id"]; ?>)"><i class='fas fa-trash' style='font-size:24px;color: red'></i></a>
 
+                        <div class="button">
+                        <a href="profile_edit.php?id=<?php echo $row['member_id']; ?>" style="margin-right: 30px;">Edit</a>
+                        </div>
                         
-                    </div>
+                        <div class="button">
+                        <a href="profile_change_password.php?id=<?php echo $row['member_Id']; ?>" style="margin-right: 30px;">Change Password</a>
+                        </div>
+                        
+                        <div class="button">
+                        <a href="#" data-toggle="modal" data-target= "#delete-member-modal" onClick="setMemberId(<?php echo $row["member_id"]; ?>)">Close Account</a>
+                        </div>
                     
                 </div>
                 

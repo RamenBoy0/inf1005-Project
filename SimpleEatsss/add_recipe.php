@@ -67,7 +67,7 @@
                 <div class="form-group">
                     <label for="ingredients">Ingredients:</label>
                     <div class="rightside" id="counter2"></div>
-                    <textarea class="form-control" maxlength="1000" rows="5" type="text" id="ingredients"
+                    <textarea class="form-control" maxlength="5000" rows="5" type="text" id="ingredients"
                         required name="ingredients" placeholder="Enter Ingredients"></textarea>
                 </div>
                 

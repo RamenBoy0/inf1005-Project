@@ -54,9 +54,7 @@ else
         
     }
     
-}
-
-            
+}   
             $targetDir = "/var/www/html/SimpleEatsss/images/";
             $fileName = basename($_FILES["upload"]["name"]);
             $targetFilePath = $targetDir . $fileName;
@@ -90,64 +88,68 @@ function sanitize_input($data)
  return $data;
 }
 
-function saveMemberToDB()
+ 
+
+function saveMemberToDB(){
+global $fname, $lname, $email, $pwd_hashed, $fileName,$errorMsg, $success;
+// Create database connection.
+$config = parse_ini_file('../../private/db-config.ini');
+$conn = new mysqli($config['servername'], $config['username'], 
+        $config['password'], $config['dbname']);
+// Check connection
+if ($conn->connect_error)
 {
-    global $fname, $lname, $email, $pwd_hashed, $fileName,$errorMsg, $success;
-    // Create database connection.
-    $config = parse_ini_file('../../private/db-config.ini');
-    $conn = new mysqli($config['servername'], $config['username'], 
-            $config['password'], $config['dbname']);
-    // Check connection
-    if ($conn->connect_error)
+    $errorMsg = "Connection failed: " . $conn->connect_error;
+    $success = false;
+}          
+    $stmt = $conn->prepare("INSERT INTO world_of_food_members (fname, lname, email, password, upload) VALUES (?, ?, ?, ?, ?)");
+
+    // Bind & execute the query statement:
+    $stmt->bind_param("sssss", $fname, $lname, $email, $pwd_hashed, $fileName);
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $pwd_hashed = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
+    $fileName = basename($_FILES["upload"]["name"]);
+    $success = true;
+
+    if (!$stmt->execute())
     {
-        $errorMsg = "Connection failed: " . $conn->connect_error;
+        $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
         $success = false;
     }
-    else    
-    {
-        
+    $stmt->close();
+    $conn->close();
+}
+
+
+// Create database connection.
+$config = parse_ini_file('../../private/db-config.ini');
+$conn = new mysqli($config['servername'], $config['username'], 
+        $config['password'], $config['dbname']);
+// Check connection
+if ($conn->connect_error)
+{
+    $errorMsg = "Connection failed: " . $conn->connect_error;
+    $success = false;
+}
+   
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    // Validate form data
+    if ($success)
+    {     
         $email_query = "SELECT email FROM world_of_food_members WHERE email = '" . $email . "'";
         $result_email = mysqli_query($conn, $email_query);
         $email_unique = mysqli_fetch_assoc($result_email)['email'];
         if ($_POST['email'] == $email_unique){
             $errorMsg = "Email already exists";
             $success = false;    
-        }
-        
-        else{
-        
-        
-        // Prepare the statement:
-        $stmt = $conn->prepare("INSERT INTO world_of_food_members (fname, lname, email, password, upload) VALUES (?, ?, ?, ?, ?)");
-        
-        // Bind & execute the query statement:
-        $stmt->bind_param("sssss", $fname, $lname, $email, $pwd_hashed, $fileName);
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email = $_POST['email'];
-        $pwd_hashed = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
-        $fileName = basename($_FILES["upload"]["name"]);
-        $success = true;
-        }
-        if (!$stmt->execute())
-        {
-            $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-            $success = false;
-        }
-        $stmt->close();
     }
-    $conn->close();
-}
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    // Validate form data
-    if ($success)
-    {
-        // Save member to database
+    else{
         saveMemberToDB();
     }
+}
 }
 ?>
 <html lang = "en">

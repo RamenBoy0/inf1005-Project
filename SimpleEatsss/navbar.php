@@ -71,26 +71,37 @@ $email = $_SESSION["email"];
               $result = $conn->query($sql);
               if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
-                $photo = $row["upload"];
+                $photo = $row["upload"];        
+                $fileName = basename($_FILES["upload1"]["name"]);
+                $imageSource = 'images/' . (($fileName == "") ? $photo : $fileName);
               }
             }
         }
         ?>
         
-        <img src='images/<?php echo $photo; ?>' alt="User Photo" style="height:40px;width:40px;border-radius: 50%;">  
+        <img src='<?php echo $imageSource; ?>' alt="User Photo" style="height:40px;width:40px;border-radius: 50%;">  
         <a href="profile.php"><?php echo strstr($email, '@', true); ?></a>   
         <?php endif; ?>
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="search.php" class="fas fa-search" aria-hidden = "true"></a>
         <?php endif; ?>
+        
+        
         <?php if ($_SESSION["logged_in"] == true): ?>
         <a href="favourites.php" class="fas fa-heart" aria-hidden = "true"></a>
          <?php endif; ?>
+        
+         <?php if (!isset($_SESSION["logged_in"])): ?>
         <a href="register.php" class="fa fa-registered" aria-hidden = "true"></a>
+         <?php endif; ?> 
+        
         <?php if (!isset($_SESSION["logged_in"])): ?>
         <a href="login.php" class="far fa-id-card"></a>
         <?php endif; ?> 
+        
+           <?php if ($_SESSION["logged_in"] == true): ?>
         <a href = "logout.php" class="fas fa-sign-out-alt"></a>
+          <?php endif; ?> 
     </ul>
 
     </div>

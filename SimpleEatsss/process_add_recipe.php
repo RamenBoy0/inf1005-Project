@@ -224,11 +224,12 @@
                 echo "<br>";
                 echo "<br>";
                 echo "<h1>You have successfully added a recipe.</h1>";
+//                echo($ingredients);
                 echo "<br>";
                 echo "<h2> Thank you. Recipe Name: " . $rname . ".</h2>";
                 echo "<br>";
                 
-                $link = 'index.php';
+                $link = 'view_my_recipe.php';
                 printf(' <a href="' .$link. '">
                 <button style="background-color: green;border-color: white;" class="btn btn-primary">Home</button>
                 </a>');
@@ -262,7 +263,7 @@
                 else    
             {
                 $stmt = $conn->prepare("INSERT INTO world_of_food_recipes (recipe_name, prep_time, cook_time, serving, description, ingredients, methods, photo, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                $stmt->bind_param("siiisssss", $rname, $prep, $cook, $serving, $description, $ingredients, $methods, $fileName, $email);
+                $stmt->bind_param("siiisssss", $rname, $prep, $cook, $serving, $description, $_POST["ingredients"], $methods, $fileName, $email);
                 if (!$stmt->execute())
         {
             $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;

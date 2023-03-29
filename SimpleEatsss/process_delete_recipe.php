@@ -48,7 +48,7 @@
                         echo "<br><br><br>";
                         echo "<h1>" . $message . "</h1>";
 
-                        echo "<a href='index.php' class = 'btn btn-success'>Back to home page</a>";
+                        echo "<a href='view_my_recipe.php' class = 'btn btn-success'>Back to home page</a>";
 
                 }
                 ?>

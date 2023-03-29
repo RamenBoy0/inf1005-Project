@@ -45,10 +45,10 @@
             
             $upload = $errorupload = "";
             $targetDir = "/var/www/html/SimpleEatsss/images/";
-            $fileName = basename($_FILES["upload"]["name"]);
+            $fileName = basename($_FILES["upload1"]["name"]);
             $targetFilePath = $targetDir . $fileName;
             $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-            if (empty($_FILES["upload"]))
+            if (empty($_FILES["upload1"]))
             {
                 $errorupload .= "Upload is required.<br>";
                 $success2 = false; 
@@ -57,7 +57,7 @@
                 $allowTypes = array('jpg','png','jpeg','gif','pdf');
                 if($fileName){
                     if(in_array($fileType, $allowTypes)){
-                        move_uploaded_file($_FILES["upload"]["tmp_name"], $targetFilePath);
+                        move_uploaded_file($_FILES["upload1"]["tmp_name"], $targetFilePath);
                         $success2 = true;
                     }
                     else{

@@ -109,10 +109,14 @@
       <div class="center">
      <div class="pagination">    
       <?php  
-        $query = "SELECT COUNT(*) FROM world_of_food_recipes";   
+        $email = $_SESSION["email"];
+        $query = "SELECT COUNT(*) FROM world_of_food_recipes WHERE email = '" . $email . "'"; 
         $rs_result = mysqli_query($conn, $query);     
         $row = mysqli_fetch_row($rs_result);     
-        $total_records = $row[0];     
+        $total_records = $row[0];      
+        
+              
+          
           
          echo "</br>";  
          

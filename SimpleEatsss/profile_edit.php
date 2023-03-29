@@ -55,7 +55,7 @@ $email = $_SESSION["email"];
                 </div>
             <div class="form-group">
             <label for="upload">Upload Photo:</label>
-            <input type="file" id="upload" accept="image/*" name="upload" value="<?php echo $row['upload'];?>" required placeholder="Upload Photo">
+            <input type="file" id="upload" accept="image/*" name="upload1" value="<?php echo $row['upload'];?>" required placeholder="Upload Photo">
             <img id="blah"  src='images/<?php echo $row["upload"]; ?>' height="150" width="150" alt="your image" />
             </div>
             
