@@ -1,4 +1,4 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
              <?php
@@ -57,13 +57,13 @@
 
            ?>
                 <br><br><br>
-                <h1>Update Recipe
+                <h1>Update Recipe </h1>
                 <div class="form-group">
                     <input type="hidden" name="id" class="txtField" value="<?php echo $row['id']; ?>">
                     
                 </div>
          
-                </h1>
+               
             <p>
                 For more recipe  
                 <a href="western.php">click here</a>.
@@ -72,13 +72,13 @@
 
             <div class="form-group">
             <label for="upload">Upload Photo:</label>
-            <input type="file" id="upload" accept="image/*" name="upload" value="<?php echo $row['photo'];?>" required placeholder="Upload Photo">
+            <input type="file" id="upload" accept="image/*" name="upload" required >
             <img id="blah"  src='images/<?php echo $row["photo"]; ?>' height="150" width="150" alt="your image" />
             <br><br>
 <!--            <p>Original Photo: <img src='images/<?php echo $row["photo"]; ?>' height="150" width="150"/></p>-->
             </div>
                 <div class="form-group">
-                    <label for="fname">Name:</label>
+                    <label for="rname">Name:</label>
                     <input class="form-control" maxlength="200" type="text" id="rname"
                         name="rname" placeholder="Enter Name" value="<?php echo $row['recipe_name'];?>">
                 </div>
@@ -103,7 +103,7 @@
                 <div class="form-group">
                     <label for="description">Description: </label>
                     <div class="rightside" id="counter"></div>
-                    <textarea class="form-control" maxlength="500" type="text" id="description"
+                    <textarea class="form-control" maxlength="500" id="description"
                         required name="description" placeholder="Enter Description"><?php echo $row['description'];?></textarea>
                 </div>
               
@@ -111,14 +111,14 @@
                 <div class="form-group">
                     <label for="ingredients">Ingredients:</label>
                     <div class="rightside" id="counter2"></div>
-                    <textarea class="form-control" maxlength="1000" rows="5" type="text" id="ingredients"
+                    <textarea class="form-control" maxlength="1000" rows="5" id="ingredients"
                         required name="ingredients" placeholder="Enter Ingredients"><?php echo $row['ingredients'];?></textarea>
                 </div>
                 
                 <div class="form-group">
                     <label for="methods">Methods:</label>
                     <div class="rightside" id="counter3"></div>
-                    <textarea class="form-control" maxlength="5000" rows="10" type="text" id="methods"
+                    <textarea class="form-control" maxlength="5000" rows="10" id="methods"
                         required name="methods" placeholder="Enter Methods"><?php echo $row['methods'];?></textarea>
                 </div>
                 <div class="form-group">
@@ -129,9 +129,11 @@
             <br><br>
             </section>
         </main>
+        <footer>
         <?php
         include "footer.php";
         ?>
+        </footer>
     </body>
 
 
