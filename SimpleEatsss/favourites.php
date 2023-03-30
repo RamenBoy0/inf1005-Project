@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
     <script defer src="js/favourite_delete_recipe.js"></script>
@@ -60,13 +61,13 @@
         ?>
         
         <article class="col-sm">
-            <strong><h4><?php echo $row['recipe_name']; ?></h4></strong>
+            <strong><h2><?php echo $row['recipe_name']; ?></h2></strong>
         
             <div class="space">
             <figure class="container2">
                                        
-                <a href="#" onclick="deleteFromFavorites(<?php echo $row['recipe_id']; ?>)" class="heart-icon fas fa-heart fa-3x"></a>
-            <img src='images/<?php echo $row["photo"]; ?>'>
+                <a href="#" aria-label="unfavourite" onclick="deleteFromFavorites(<?php echo $row['recipe_id']; ?>)" class="heart-icon fas fa-heart fa-3x"></a>
+            <img src='images/<?php echo $row["photo"]; ?>' alt="">
   
               <i>
                   <div class="overlay" style="width:300px;">
@@ -101,7 +102,7 @@
         $row = mysqli_fetch_row($rs_result);     
         $total_records = $row[0];     
           
-         echo "</br>";  
+         echo "<br>";  
          
         // Number of pages required.   
         $total_pages = ceil($total_records / $per_page_record);     
@@ -132,12 +133,12 @@
     </div>
     
 </main>
-    </body>
     <footer>
     <?php
         include "footer.php";
     ?>
     </footer>
+    </body>
 </html>
 
         
