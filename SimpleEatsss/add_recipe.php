@@ -17,7 +17,7 @@
             ?>
         </header>
         
-        <div class="form-container">
+        <main class="form-container">
             <section>
                 <br><br><br>
             <h1>Add Recipe</h1>
@@ -29,12 +29,12 @@
 
             <div class="form-group">
             <label for="upload">Upload Photo:</label>
-            <input type="file" id="upload" accept="image/*" name="upload" value="<?php echo $row['photo'];?>" required placeholder="Upload Photo">
-            <img id="blah"  src='images/add_recipe_place_holder.jpg' height="150" width="150" alt="your image" />
+            <input type="file" id="upload" accept="image/*" name="upload" required>
+            <img id="blah"  src='images/add_recipe_place_holder.jpg' height="150" width="150" alt="your image">
             <br><br>
             </div>
                 <div class="form-group">
-                    <label for="fname">Name:</label>
+                    <label for="rname">Name:</label>
                     <input class="form-control" maxlength="200" type="text" id="rname"
                         required name="rname" placeholder="Enter Name">
                 </div>
@@ -59,7 +59,7 @@
                 <div class="form-group">
                     <label for="description">Description: </label>
                     <div class="rightside" id="counter"></div>
-                    <textarea class="form-control" maxlength="500" type="text" id="description"
+                    <textarea class="form-control" maxlength="500" id="description"
                         required name="description" placeholder="Enter Description"></textarea>
                 </div>
               
@@ -67,14 +67,14 @@
                 <div class="form-group">
                     <label for="ingredients">Ingredients:</label>
                     <div class="rightside" id="counter2"></div>
-                    <textarea class="form-control" maxlength="5000" rows="5" type="text" id="ingredients"
+                    <textarea class="form-control" maxlength="1000" rows="5" id="ingredients"
                         required name="ingredients" placeholder="Enter Ingredients"></textarea>
                 </div>
                 
                 <div class="form-group">
                     <label for="methods">Methods:</label>
                     <div class="rightside" id="counter3"></div>
-                    <textarea class="form-control" maxlength="5000" rows="10" type="text" id="methods"
+                    <textarea class="form-control" maxlength="5000" rows="10" id="methods"
                         required name="methods" placeholder="Enter Methods"></textarea>
                 </div>
                 <div class="form-group">
@@ -82,10 +82,12 @@
                 </div>
                 </form>
             </section>
-        </div>
+        </main>
+        <footer>
         <?php
         include "footer.php";
         ?>
+        </footer>
     </body>
 
 

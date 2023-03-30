@@ -52,11 +52,11 @@
                                             
                                             <div class="faq-one">
                                                 <!-- faq question -->
-                                                <h2 class="faq-page">What does Simple Eats provide?</h2>
+                                                <h2 class="faq-page">What does Simply Eats provide?</h2>
                                                 <!-- faq answer -->
                                                 <div class="faq-body">
-                                                    <h4>Simple Eat provides and allows sharing of recipes. The recipes are easy to follow, we ensure that the preparation will not exceed by 15 minutes and cooking time will not exceed 60 minutes. 
-                                                        You can simply cook a dish with no experience needed. To know more about Simple Eat click <a href="about.php">here</a>.</h4>
+                                                    <h4>Simply Eat provides and allows sharing of recipes. The recipes are easy to follow, we ensure that the preparation will not exceed by 15 minutes and cooking time will not exceed 60 minutes. 
+                                                        You can simply cook a dish with no experience needed. To know more about Simply Eat click <a href="about.php">here</a>.</h4>
                                                 </div>
                                             </div>
                                             <hr class="hr-line">
@@ -65,7 +65,7 @@
                                                 <h2 class="faq-page">How to create your own recipe?</h2>
                                                 <!-- faq answer -->
                                                 <div class="faq-body">
-                                                    <h4>You will need to <a href="register.php">register</a> an account and login to create your own recipe.</h4>
+                                                    <h4>You will need to register an account and login to create your own recipe.</h4>
                                                 </div>
                                             </div>
                                             <hr class="hr-line">
@@ -126,12 +126,16 @@
 	</div>
         </section>
         </div>
+            
         </main>
-        <br>
+        
+        <footer>
         <?php
             include "footer.php";
         ?>
+        </footer>
         
     </body>
+    
 
 </html>

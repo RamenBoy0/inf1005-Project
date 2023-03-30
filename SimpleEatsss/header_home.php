@@ -4,7 +4,7 @@
 <title>Simple Eats</title>
 
 <!--Swiper Bundle is a JS library used to do the interactive slider-->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 <!--Library used to generate the icons and fonts-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -32,8 +32,10 @@ crossorigin="anonymous">
 </script>
 
 <script defer src="js/home.js"></script>
+<link rel="stylesheet" href="css/cuisines.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/nav_footer.css">
+
 
 <!--Script for slider-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

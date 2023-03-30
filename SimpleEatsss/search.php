@@ -74,25 +74,30 @@
                 }
             ?>
 
- 
           <main class="cuisine-container">
+              
+              
+            <div class="header-section">
+                <h1>Search</h1>
+            </div>
+              <br>
               <div id="searching">
                 <div class="row justify-content-center">
-                   
+                 
                     <div class="col-6 text-center">
                         <form action="#" method="post">
                             <div class="input-group">
                                 
                                 <input placeholder="Recipe Search Here" type="text" name="search" value="" id="search" class="form-control form-control-lg" autocomplete="off">
                                 
-                                <select id="sortBy" name="sortBy" class="input-group-text" style='font-size: 14px;  color: #495057;background-color: white;text-align: left;'>
+                                <select id="sortBy" name="sortBy" class="input-group-text" aria-label="sort" style='font-size: 14px;  color: #495057;background-color: white;text-align: left;'>
                                         <option value="">Sort by</option>
-                                        <option id="prep_time" name="prep_time" value="prep_time">Quick Preparation</option>
-                                        <option id="cook" name="cook" value="cook">Easy Cooking</option>
-                                        <option id="serving" name="serving" value="serving">Huge Serving</option>
+                                        <option id="prep_time" value="prep_time">Quick Preparation</option>
+                                        <option id="cook" value="cook">Easy Cooking</option>
+                                        <option id="serving" value="serving">Huge Serving</option>
                                 </select>
                                 
-                                <button type="submit" name="submit" value="Submit" class="input-group-text btn-success px-4"><i class="fa fa-search"></i></button>
+                                <button type="submit" name="submit" value="Submit" class="input-group-text btn-success px-4" aria-label="search_button"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
                        
@@ -118,7 +123,7 @@
 
                     <div class="space">
                     <figure class="container2">
-                    <img src='images/<?php echo $row["photo"]; ?>'>
+                    <img src='images/<?php echo $row["photo"]; ?>' alt="images">
 
                       <i>
                           <div class="overlay" style="width:300px;">
@@ -151,10 +156,11 @@
             <br><br>
         </div>  
         </main>
+        <footer>
         <?php
         include "footer.php";
         ?>
-       
+        </footer>
     </body>
     
 

@@ -6,7 +6,7 @@ $email = $_SESSION["email"];
 ?>
 
 
-
+<!doctype html>
 <html lang = "en">
     <head>
     <?php include "header_nav_footer.php"?>
@@ -39,7 +39,7 @@ $email = $_SESSION["email"];
                 }
             ?>
         
-    <div class="container">
+    <main class="container">
         <br>
         <br>
         <br>
@@ -56,7 +56,7 @@ $email = $_SESSION["email"];
         </div>   
             
         <div class="form-group">
-            <label for="pre_pwd">Current Password:</label>
+            <label for="current_pwd">Current Password:</label>
             <input type="password" id="current_pwd" required maxlength="45" name="current_pwd"
                 placeholder="Current password" class="form-control">
         </div>
@@ -73,9 +73,9 @@ $email = $_SESSION["email"];
                 placeholder="Confirm password" class="form-control">
         </div>
             
-        <button type="update" class = "btn btn-primary">Change Password</button>
+        <button type="submit" class = "btn btn-primary">Change Password</button>
         </form>
-    </div>
+    </main>
 
         <footer>
             <?php include "footer.php" ?>;

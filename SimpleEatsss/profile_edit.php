@@ -6,7 +6,7 @@ $email = $_SESSION["email"];
 ?>
 
 
-
+<!doctype html>
 <html lang = "en">
     <head>
     <?php include "header_nav_footer.php"?>
@@ -39,7 +39,7 @@ $email = $_SESSION["email"];
                 }
             ?>
         
-    <div class="container">
+    <main class="container">
         <br>
         <br>
         <br>
@@ -55,8 +55,8 @@ $email = $_SESSION["email"];
                 </div>
             <div class="form-group">
             <label for="upload">Upload Photo:</label>
-            <input type="file" id="upload" accept="image/*" name="upload1" value="<?php echo $row['upload'];?>" required placeholder="Upload Photo">
-            <img id="blah"  src='images/<?php echo $row["upload"]; ?>' height="150" width="150" alt="your image" />
+            <input type="file" id="upload" accept="image/*" name="upload1" required>
+            <img id="blah"  src='images/<?php echo $row["upload"]; ?>' height="150" width="150" alt="your image">
             </div>
             
         <div class ="form-group">
@@ -78,9 +78,9 @@ $email = $_SESSION["email"];
                 placeholder="Enter email" class="form-control" value="<?php echo $row['email'];?>" readonly="readonly">
         </div>
 
-        <button type="update" class = "btn btn-primary">Edit</button>
+        <button type="submit" class = "btn btn-primary">Edit</button>
         </form>
-    </div>
+    </main>
 
         <footer>
             <?php include "footer.php" ?>;

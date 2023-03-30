@@ -1,3 +1,4 @@
+
 <div class="footer">
 
     <div class="box-container">
@@ -5,7 +6,7 @@
         <div class="foot-box">
             <h2>Quick Links</h2>
             <a href="index.php">Home</a>
-            <a href="#">Cuisines</a>
+            <a href="view_all_recipes.php">Recipes</a>
             <a href="about.php">About</a>
         </div>
 
@@ -26,6 +27,6 @@
 
     </div>
 
-    <div class="credit"> Copyright @ 2023 by <span>Simple Eats</span> </div>
+    <div class="credit"> Copyright @ 2023 by Simply Eats </div>
 
 </div>

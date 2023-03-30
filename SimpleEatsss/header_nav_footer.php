@@ -3,9 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simple Eats</title>
 
-<!--Swiper Bundle is a JS library used to do the interactive slider-->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
 <!--Library used to generate the icons and fonts-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 

@@ -26,14 +26,14 @@ $email = $_SESSION["email"];
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="favorite-member-modal-label">Close Account</h3>
+                    <h3 class="modal-title" id="favorite-member-modal-label">Delete Account</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
             
-                    <p>Do you want to close account?</p>
+                    <p>Do you want to delete account?</p>
                     <input type="hidden" id="member-id" name="member-id" value="">
                 </div>
                 <div class="modal-footer">
@@ -67,30 +67,29 @@ $email = $_SESSION["email"];
                 <h1>Profile</h1>
                 </div>
                 
-                <div class="profile-container" >
+                <div class="profile-container">
                     
                     <div class ="image-section">
-                        <img src='images/<?php echo $row["upload"]; ?>'>
+                        <img src='images/<?php echo $row["upload"]; ?>' alt='images'>
                     </div>
                     
-                    <div class="content-section">
+                    <div class="content-section" style="padding-left:50px;">
                        
-                        <h5>First Name : <?php echo $row['fname']; ?></h5><br>
-                        <h5>Last Name : <?php echo $row['lname']; ?></h5><br>
-                        <h5>Email : <?php echo $row['email']; ?></h5><br>
+                        <p style="text-align: left;font-size: 25px;">First Name : <?php echo $row['fname']; ?></p><br>
+                        <p style="text-align: left;font-size: 25px;">Last Name : <?php echo $row['lname']; ?></p><br>
+                        <p style="text-align: left;font-size: 25px;">Email : <?php echo $row['email']; ?></p><br>
                         
 
-                        <div class="button">
-                        <a href="profile_edit.php?id=<?php echo $row['member_id']; ?>" style="margin-right: 30px;">Edit</a>
-                        </div>
+                    <div class="button">
                         
-                        <div class="button">
+                        <a href="profile_edit.php?id=<?php echo $row['member_Id']; ?>" style="margin-right: 30px;">Edit Profile</a>
                         <a href="profile_change_password.php?id=<?php echo $row['member_Id']; ?>" style="margin-right: 30px;">Change Password</a>
+                        <a href="#" data-toggle="modal" data-target= "#delete-member-modal" onClick="setMemberId(<?php echo $row["member_id"]; ?>)">Delete</a>
+
+       
                         </div>
-                        
-                        <div class="button">
-                        <a href="#" data-toggle="modal" data-target= "#delete-member-modal" onClick="setMemberId(<?php echo $row["member_id"]; ?>)">Close Account</a>
-                        </div>
+                    
+                    </div>
                     
                 </div>
                 
@@ -99,13 +98,13 @@ $email = $_SESSION["email"];
             ?>
                 
             </main>   
-    </body>
-    
     <footer>
         <?php
             include "footer.php";
         ?>
     </footer>
+    </body>
+    
 
 
 </html>
