@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang = "en">
     <head>
     <?php include "header_nav_footer.php"?>
@@ -5,8 +6,10 @@
     </head>
         <header><?php include "navbar.php";?></header>
         
-    <form action="" id="search-form">
-  <input type="search" placeholder="search here..." name="" id="search-box">
+        <main>
+        
+    <form action="#" id="search-form">
+  <input type="search" placeholder="search here..." name="#" id="search-box">
   <label for="search-box" class="fas fa-search"></label>
   <i class="fas fa-times" id="close"></i>
     </form>   
@@ -21,7 +24,7 @@
 
         <div class="form-group">
         <label for="upload">Upload Photo:</label>
-        <input type="file" id="upload" accept="image/*" name="upload" value="<?php echo $row['photo'];?>" required placeholder="Upload Photo">
+        <input type="file" id="upload" accept="image/*" name="upload">
         <img id="blah"  src='images/heading.png' height="150" width="150" alt="your image" />
         </div>
 
@@ -63,10 +66,12 @@
             </label>
         </div>
         <button type="submit" class = "btn btn-primary">Submit</button>
+        </form>
     </div>
+        </main>
 
         <footer>
             <?php include "footer.php" ?>;
         </footer>
  ?>
-</body>
+</html>
