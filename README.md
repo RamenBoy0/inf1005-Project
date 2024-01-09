@@ -1,2 +1,2 @@
-# inf1005-Project
+# SimpleEatsss
 Repository for INF1005 Web Systems and Technologies Project
